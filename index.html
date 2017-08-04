@@ -8,35 +8,34 @@
 </head>
 <body>
 	<!-- Header -->
-	<header id="header" class="header contenedor">
-		<!-- Logotipo -->
-		<figure class="logotipo">
-			<img src="images/invie.png" width="186" height="60" alt="invie Logotipo" />
-		</figure>
-		<!-- Menu -->
-		<nav class="menu">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="#guitarras">Guitarras</a>
-				</li>
-				<li>
-					<a href="precios.html">Precios</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
 		<!-- Portada -->
-	<section id="portada" class="portada">
-		<!-- Titulo -->
+	<section id="portada" class="portada background">
+		<header id="header" class="header contenedor">
+			<!-- Logotipo -->
+			<figure class="logotipo">
+				<img src="images/invie.png" width="186" height="60" alt="invie Logotipo" />
+			</figure>
+			<!-- Menu -->
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="index.html#guitarras">Guitarras</a>
+					</li>
+					<li>
+						<a href="precios.html">Precios</a>
+					</li>
+				</ul>
+			</nav>
+		</header>		<!-- Titulo -->
 		<div class="contenedor">			
-		  <h1 class="titulo">Guitarras Invisibles</h1>
+		  <h1 class="titulo">Guitarras <span>Invi</span>sibles</h1>
 		  <!-- Resumen -->
 		  <h3 class="title-a">Se la estrella de Rock que quieres ser</h3>
 		  <!-- Boton -->
-		  <button>Conoce mas</button>
+		  <a class="button" href="#guitarras">Conoce mas</a>
 		</div>
 	</section>
 	<section id="guitarras" class="guitarras contenedor">
@@ -56,7 +55,7 @@
 			</div>
 		</article>
 		<!-- Guitarra 1 -->
-		<article class="guitarra">
+		<article class="guitarra b">
 			<img class="izquierda" src="images/invie-classic.png" width="350" alt="Guitarra Clasica" />
 			<div class="contenedor-guitarra-b">			
 			<h3 class="title-b">Guitarra Clasica</h3>
@@ -76,11 +75,39 @@
 				<a href="mailto:mail@info.co"><strong>E-mail</strong>mail@info.com<span></span></a>		
 			</div>
 			<form class="formulario">
-				<label for="nombre">Nombre</label>
-				<input type="text" name="" required id="nombre" />
-				<label for="email">E-mail</label>
-				<input type="email" name="" required id="email" />
-				<a href=""></a>
+				<div class="col1">
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" required id="nombre" />
+					<label for="email">E-mail</label>
+					<input type="email" name="email" required id="email" />
+					<div class="sexo">
+						<label for="mujer">
+							<input type="radio" name="sexo" id="mujer" value="mujer" checked>Mujer
+						</label>
+						<label for="hombre">
+							<input type="radio" name="sexo" id="hombre" value="hombre">Hombre
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+							<input type="checkbox" name="cotizacion" value="cotizacion" checked>Cotización
+						</label>
+						<label for="reclamos">
+							<input type="checkbox" name="reclamos" value="reclamos">Reclamos
+						</label>
+						<label for="comentarios">
+							<input type="checkbox" name="comentarios" value="comentarios">Comentarios
+						</label>
+						<label for="otros">
+							<input type="checkbox" name="otros" value="otros">Otros
+						</label>
+					</div>
+				</div>				
+				<div class="col2">
+					<label>Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+					<input class="button" type="submit" value="Enviar" name="">
+				</div>
 			</form>
 		</div>
 	</footer>
